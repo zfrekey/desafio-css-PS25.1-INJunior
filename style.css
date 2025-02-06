@@ -31,7 +31,7 @@ body {
 .header {
     width: 100%;
     background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
     height: 6.8125rem;
     padding: 1.75rem 7rem;
 }
@@ -48,12 +48,12 @@ body {
 }
 
 .header__links__link {
-    color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .header__links__link:hover {
-    color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
     transform: scale(1.1);
     transition: 0.5s;
 }
@@ -149,11 +149,22 @@ body {
     width: 90px;
     height: 140px;
     display: flex;
-    background-color: transparent;
     flex-direction: column;
     align-items: center;
     text-align: center;
     color: var(--cor-primaria);
+    position:relative
+}
+
+.main__list__item__badge {
+    position: absolute;
+    left: 5px;
+    background: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 
 .main__list__item:hover{
@@ -164,11 +175,11 @@ body {
 .main__list__item img {
     width: 100%;
     height: auto;
-    max-height: 100%;
     object-fit: cover;
     border-radius: 8px;
     background-color: transparent;
 }
+
 
 .main__list__item__text {
     font-size: 0.8rem;
