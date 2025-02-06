@@ -29,14 +29,9 @@ body {
 }
 
 .header {
-    width: 100%;
     background-color: var(--cor-primaria);
     color: var(--cor-terciaria);
-    height: 6.8125rem;
     padding: 1.75rem 7rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .header__title {
@@ -200,10 +195,8 @@ body {
 
 .main__list__item img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 110px;
     border-radius: 8px;
-    background-color: transparent;
 }
 
 
@@ -330,7 +323,7 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 6.8125rem;
+        top: 6.3rem;
         right: 0;
         background: var(--cor-primaria);
         width: 100%;
